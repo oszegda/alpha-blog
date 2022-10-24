@@ -1,7 +1,8 @@
-class ArticlesController < ApplicationController
+# frozen_string_literal: true
 
+# top-level class documentation
+class ArticlesController < ApplicationController
   def show
-    byebug
     @article = Article.find(params[:id])
   end
 end
